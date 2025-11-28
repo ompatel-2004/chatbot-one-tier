@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  chatbot:
+    image: chatbot-one-tier
+    build: .
+    container_name: chatbot
+    ports:
+      - "8080:80"
+    restart: always
